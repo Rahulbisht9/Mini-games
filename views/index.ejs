@@ -3,9 +3,42 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!-- <link href="./output.css" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div class="w-full h-full">
+      <header class="w-full flex h-20 p-2">
+        <div class="w-[90%]">
+          <div class="h-[50%] text-right text-2xl">Name</div>
+          <div class="h-[50%] text-right text-2xl font-bold">UID</div>              
+        </div>
+        <div class="w-[10%] flex justify-center items-center">
+          <img class="h-14" src="https://www.nicepng.com/png/full/128-1280406_user-icon-png.png" alt="">
+        </div>
+      </header>
+
+      <main>
+        <div class="h-30 bg-slate-400 text-center text-8xl hanalei-fill-regular">MINI GAMES</div>
+        
+        <div class="games-cont flex justify-center h-max">
+          <div class="tic-tac-toe flex flex-col items-center pr-20 mt-10">
+            <a href="../views/tic-tac-toe.ejs" class="ttt-img h-80"><img class="h-full" src="https://i.pinimg.com/736x/58/fc/45/58fc45bcb91fb329982b3d886fe1ffb6.jpg" alt="">
+            </a>
+            <h1 class="text-3xl">Tic-Tac-Toe</h1>
+            </div>
+          <div class="chess flex flex-col items-center pl-20">
+            <a href="#" class="chess-img h-80 mt-10">
+            <img class="h-full" src="https://i.pinimg.com/736x/6c/7a/14/6c7a14895e3186c84f129d2d5d100525.jpg" alt="">
+            </a>
+            <h1 class="text-3xl">Chess</h1>
+          </div>
+        </div>
+
+      </main>
+    </div>
   </body>
 </html>
